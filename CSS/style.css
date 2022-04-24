@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('../Img/background_carbon.jpg');
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+}
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+}
+.coin-table {
+    width: 80%;
+    margin: 20px auto;
+    border-spacing: 0;
+    border-collapse: collapse
+}
+th, td {
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.299);
+}
+th {
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px gray;
+}
+.coin-name {
+    font-size: 18px;
+}
+.coin-ticker {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.coin-price {
+    font-size: 16px;
+    font-weight: 500;
+}
+.coin-vol {
+    font-size: 16px;
+    font-weight: 500;
+}
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+}
+footer a:visited {
+    color: white;
+}
