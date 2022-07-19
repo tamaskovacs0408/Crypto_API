@@ -1,3 +1,5 @@
+const coinTable = document.querySelector('.js-table');
+
 fetch(`https://api.coinpaprika.com/v1/tickers`)
     .then(data => data.json())
     .then(coins => {
@@ -12,15 +14,5 @@ fetch(`https://api.coinpaprika.com/v1/tickers`)
                     <td class="coin-vol">${coin.quotes.USD.percent_change_24h}%</td>
                     </tr>`)
                     .join('');
-        /*
-        Needed from API:
-        coin.rank
-        coin.name
-        coin.symbol 
-        coin.quotes.USD.price 
-        coin.quotes.USD.percent_change_24h
-          */
-        document.querySelector(".js-table")
-            .innerHTML += first20Coins;
+                    coinTable.innerHTML += first20Coins;
     } )
-    .catch(console.error)
