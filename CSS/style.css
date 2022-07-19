@@ -2,18 +2,33 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 10px;
+}
 body {
+    position: relative;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('../Img/background_carbon.jpg');
     color: rgb(255, 255, 255);
     font-family: 'Mulish', sans-serif;
-    height: 100vh;
+    height: 100%;
 }
 h1 {
     font-family: 'Inconsolata', monospace;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     margin: 30px auto;
     padding: 20px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.table_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 .coin-table {
     width: 80%;
@@ -27,30 +42,34 @@ th, td {
     padding: 2px;
 }
 th {
-    font-size: 25px;
+    font-size: 1.8rem;
     font-weight: 700;
     text-shadow: 1px 1px 2px gray;
 }
 .coin-name {
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 .coin-ticker {
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 2px;
 }
 .coin-price {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 .coin-vol {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 footer {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
     text-align: center;
     font-size: 10px;
-    margin: 30px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
 footer a {
     color: white;
@@ -59,4 +78,25 @@ footer a {
 }
 footer a:visited {
     color: white;
+}
+
+@media screen and (min-width: 786px) {
+    h1 {
+        font-size: 5rem;
+    }
+    th {
+        font-size: 2rem;
+    }
+    .coin-name {
+        font-size: 1.8rem;
+    }
+    .coin-ticker {
+        font-size: 1.8rem;
+    }
+    .coin-price {
+        font-size: 1.6rem;
+    }
+    .coin-vol {
+        font-size: 1.6rem;
+    }
 }
